@@ -4,10 +4,26 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 
 // Dichiara la funzione qui.
+function sameWord(){
+    const stessaIniziale = [];
+    
+   for(i = 0; i < names.length; i++){
+    if(names[i][0] === 'A'){
+        stessaIniziale.push(names[i]);
+        
+    }
+   }
 
+   return stessaIniziale;
+
+
+
+
+}
 
 // Invoca la funzione qui e stampa il risultato in console
 
+console.log(sameWord());
 
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
